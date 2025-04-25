@@ -4,7 +4,3 @@ nltk==3.8.1
 requests==2.31.0
 beautifulsoup4==4.12.3
 imbalanced-learn==0.12.2
-
-'''nltk.download('stopwords')
-nltk.download('punkt')
-nltk.download('wordnet')'''

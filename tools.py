@@ -49,8 +49,9 @@ def treinar_modelo():
 
     model = MultinomialNB(alpha=0.5)
     model.fit(X_train_res, y_train_res)
-
-    return model, vectorizer
+    predictions = model.predict(X_test)
+    accuracy = accuracy_score(y_test, predictions)
+    return model, vectorizer, accuracy
 
 def predict_fake_news(text, model, vectorizer):
     processed_text = preprocess_text(text)

@@ -1,7 +1,7 @@
 import streamlit as st
 from tools import obter_noticia_link, predict_fake_news, treinar_modelo
 
-st.set_page_config(page_title="Detector de Fake News", layout="centered")
+st.set_page_config(page_title="Detector de Fake News", layout="centered", page_icon="TV.JPG")
 st.title("📰 CheckNews")
 st.write("Informe um link de notícia para verificar sua autenticidade.")
 
